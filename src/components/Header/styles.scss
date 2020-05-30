@@ -17,8 +17,9 @@ html {
             position: absolute;
             top: 50%;
             left: 10%;
-            -webkit-transform: translateY(-50%);
-            -moz-transform: translateY(-50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
             transform: translateY(-50%);
         }
 
@@ -44,7 +45,12 @@ html {
         }
 
         li {
+            display: inline-block;
             list-style-type: none;
+
+            &:last-child {
+                margin-right: 0;
+            }
 
             a {
                 font-size: 1.8rem;
@@ -59,7 +65,7 @@ html {
             }
 
             a:hover {
-                color: #707070;
+                color: #787878;
             }
         }
     }

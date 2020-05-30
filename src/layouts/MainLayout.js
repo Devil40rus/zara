@@ -8,7 +8,7 @@ import '../default.scss';
 const MainLayout = props => {
     return (
         <div>
-            <Header />
+            <Header {...props}/>
             <div className="main">
                 {props.children}
             </div>
